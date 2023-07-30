@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Clock</h1>
+        <p id="alarmUI"></p>
+        <div class="clock">
+            <div class="hour-hand" id="hour-hand"></div>
+            <div class="minute-hand" id="minute-hand"></div>
+            <div class="second-hand" id="second-hand"></div>
+            <div class="center-circle"></div>
+        </div>
+        <div class="alarmFields">
+            <div class="inputFields">
+                <label for="hour">Hour :</label>
+                <input type="number" id="hour" min="1" max="12" />
+                <label for="minute">Minute :</label>
+                <input type="number" id="minute" min="0" max="59" />
+                <label for="second">Second :</label>
+                <input type="number" id="second" min="0" max="59" />
+                <label for="ampm">AM/PM :</label>
+                <select id="ampm">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+            </div>
+            <button class="setAlarm" onclick="setAlarm()">Set Alarm</button>
+        </div>
+        <hr>
+        <div id="alarmList">
+            <h2>Alarms List</h2>
+            <ul id="alarms"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
