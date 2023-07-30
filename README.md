@@ -34,6 +34,6 @@ The alarm will be removed from the list without triggering an alert.
 
 ## Technologies Used
 HTML
-CSS (Bootstrap allowed for styling)
-Vanilla JavaScript (No external libraries or frameworks)
+CSS
+Vanilla JavaScript
 
